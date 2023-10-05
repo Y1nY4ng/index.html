@@ -1,0 +1,25 @@
+body {background-color:cornsilk;
+    margin:auto;
+    padding:5px;
+    border-radius:10px;}
+    h1 {color: midnightblue;
+    text-align:center;
+    font-family: 'Sofia Sans Condensed', sans-serif;}
+    #descripion{
+    text-align:center;
+    color: darkgoldenrod;
+    font-family: 'Pixelify Sans', cursive;}
+    #link{color:darkolivegreen;
+    font-family: 'Bubblegum Sans', cursive;}
+    #inter{color:darkolivegreen;
+    font-family: 'Bubblegum Sans', cursive;}
+    #man{display:flex;
+    justify-content: center;}
+    form {text-align: center;
+    color:darkcyan;
+    font-family: 'Bubblegum Sans', cursive;}
+    a{color:darkorchid;
+    font-family: 'Bubblegum Sans', cursive;}
+    table{width:100px;
+    display:flex;
+    flex-direction: row;}
