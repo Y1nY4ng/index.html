@@ -53,12 +53,31 @@
       <label for = "PlM"> Playing Music </label><br>
            <input type = "radio" id = "howf" name = "HF_activity" value = "HOWF">
       <label for = "howf"> Hanging out with Friends </label><br>
-                 <input type = "button" id = "but" name = "button_value" value = "Confirm">
-      <label for = "but"> I have these things in common. </label><br>
+                 <input type = "button" id = "but" name = "button_value" value = "I have these things in common.">
     </form>
     <p id="link">Links:</p>
     <a href="https://mail.google.com/mail/u/1/#inbox">My Gmail</a>
     <div><a href="https://www.instagram.com/?hl=en">My Instagram</a></div>
     <a  href="https://discord.com/channels/@me">My Discord</a>
+     <form action = "https://sheetdb.io/api/v1/oman94pzwqm1h" method="post" id="sheetdb-form">
+      <input id = inpt1>  </input>
+      <input id = inpt2>  </input></body>
+      <button id = "butn"> Submit </button>
+      </form>
+      <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            alert('success')
+          });
+        });
+      </script>
   </body>
 </html>
