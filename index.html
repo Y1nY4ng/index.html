@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+<html>
+  <head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Sofia+Sans+Condensed:wght@1&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 </style>
-<html>
-  <head>
     <link rel = "stylesheet" href = "style.css">
   </head>
   <body>
@@ -21,7 +21,7 @@
       <p>Pasadena, CALIFORNIA</p>
       <p>United States</p>
     </div>
-    <table style="width=100%">
+    <table style="width:100%">
       <tr>
       </tr>
       <tr>
@@ -59,10 +59,10 @@
     <a href="https://mail.google.com/mail/u/1/#inbox">My Gmail</a>
     <div><a href="https://www.instagram.com/?hl=en">My Instagram</a></div>
     <a  href="https://discord.com/channels/@me">My Discord</a>
-     <form action = "https://sheetdb.io/api/v1/oman94pzwqm1h" method="post" id="sheetdb-form">
-      <input id = inpt1>  </input>
-      <input id = inpt2>  </input></body>
-      <button id = "butn"> Submit </button>
+     <form action = "	https://sheetdb.io/api/v1/oman94pzwqm1h" method="post" id="sheetdb-form">
+      <input name = "data[name]">
+      <input name = "data[email]">
+      <button type = "submit"> Submit </button>
       </form>
       <script>
         var form = document.getElementById('sheetdb-form');
@@ -74,7 +74,6 @@
           }).then(
               response => response.json()
           ).then((html) => {
-            // you can put any JS code here
             alert('success')
           });
         });
